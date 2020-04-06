@@ -18,4 +18,4 @@ $samples = (Join-Path $report_dir 'samples.jtl')
 $html_report_dir = (Join-Path $report_dir 'report')
 $jmeter_log = (Join-Path $report_dir 'jmeter.log')
 
-jmeter -n -t $TestPlan -p $ConfigFile -l $samples -j $jmeter_log -e -o $html_report_dir -f
+jmeter -n -t $TestPlan -q $ConfigFile -l $samples -j $jmeter_log -e -o $html_report_dir -f
